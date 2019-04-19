@@ -7,6 +7,10 @@
 # CHEATSHEET
 
 ## postgres
+
+### RUN
+docker run -it --link kpost:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
+
 ### Importing CSV into postgre
 COPY table_name FROM ‘/path_to_csv_file.csv’ WITH FORMAT csv; <br>
 COPY table_name FROM '/path_to_csv_file.csv' DELIMITERS ',' CSV; <br>
