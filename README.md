@@ -27,8 +27,10 @@ gender VARCHAR(7) <br>
 ### ogr command to docker
 [ogr example](https://morphocode.com/using-ogr2ogr-convert-data-formats-geojson-postgis-esri-geodatabase-shapefiles/) <br>
 ogrinfo PG:"host=* port=5432 user='user' password='password' dbname='dbname'" <br>
+
 ogr2ogr -f "PostgreSQL" PG:"dbname=my_database user=postgres" "source_data.json" <br>
-ogr2ogr --debug ON -f 'KML' ./areas_desarrollo_indigena_2017_03_07.kml PG:"host=localhost port=5432 dbname=mapserver user=postgres password=" -sql "SELECT * from ( SELECT ST_Intersection(datasrc.geom, polygon) as sharedPolygon, datasrc.* from ST_MakePolygon(ST_GeomFromText('LINESTRING(-69.02160644531251 -20.053351219365318,-69.78515625000001 -20.45789615504684,-69.09851074218751 -20.979392255760608,-69.02160644531251 -20.053351219365318)',4326)) as polygon,datasources.areas_desarrollo_indigena_2017_03_07_15 as datasrc) as sharedPolygon WHERE ST_IsEmpty(sharedPolygon)='false'" <br>
+
+ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpass dbname=postgres" 'Downloads/nyct2010.geojson'
 
 ### host check
 \conninfo <br>
