@@ -36,13 +36,18 @@ ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpa
 \conninfo <br>
 
 ### CONCAT
-  ALTER TABLE table_name
-  ADD column_name column_definition;
-  UPDATE [table]
-  SET [column] = CONCAT(state, county, tract)
+  ALTER TABLE table_name \
+  ADD column_name column_definition; \
+  UPDATE [table] \
+  SET [column] = CONCAT(state, county, tract) \
 
 ### create new table by statement
   sql = "SELECT * \
   FROM nyct2010 \
   RIGHT JOIN acs \
   ON nyct2010.cd = acs.cd;"
+  
+## git
+### git pull force
+git fetch --all
+git reset --hard origin/master
