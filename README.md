@@ -35,3 +35,8 @@ ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpa
 ### host check
 \conninfo <br>
 
+### CONCAT
+ALTER TABLE table_name <br>
+  ADD column_name column_definition; <br>
+UPDATE [table]
+SET [column] = CONCAT(state, county, tract)
