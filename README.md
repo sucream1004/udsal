@@ -42,5 +42,5 @@ UPDATE [table]
 SET [column] = CONCAT(state, county, tract)
 
 ### create new table by statement
-CREATE TABLE new_table
+CREATE TABLE new_table <br>
   AS (SELECT * FROM old_table);
