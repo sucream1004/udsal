@@ -39,7 +39,7 @@ ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpa
   ALTER TABLE table_name \
   ADD column_name column_definition; \
   UPDATE [table] \
-  SET [column] = CONCAT(state, county, tract) \
+  SET [column] = CONCAT(state, county, tract)
 
 ### create new table by statement
   sql = "SELECT * \
@@ -49,5 +49,5 @@ ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpa
   
 ## git
 ### git pull force
-git fetch --all
+git fetch --all \
 git reset --hard origin/master
