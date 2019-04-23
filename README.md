@@ -3,6 +3,9 @@
 
 # CHEATSHEET
 
+## docker cp multiple files in unix
+for f in data/*txt; do docker cp $f sandbox_web_1:/usr/src/app/data/; done
+
 ## postgres
 [Tutorial](https://www.saltycrane.com/blog/2019/01/how-run-postgresql-docker-mac-local-development/)
 
