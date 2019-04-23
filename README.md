@@ -21,13 +21,13 @@ COPY table_name FROM ‘/path_to_csv_file.csv’ WITH FORMAT csv; <br>
 COPY table_name FROM '/path_to_csv_file.csv' DELIMITERS ',' CSV; <br>
 
 ### Create Table : should be same as imported csv columns
-CREATE TABLE table_name ( <br>
-id BIGSERIAL NOT NULL PRIMARY KEY, <br>
-var1 VARCHAR(50), <br>
-var2 VARCHAR(50), <br>
-var3 VARCHAR(50), <br>
-gender VARCHAR(7) <br>
-); <br>
+CREATE TABLE table_name ( \
+id BIGSERIAL NOT NULL PRIMARY KEY, \
+var1 VARCHAR(50), \
+var2 VARCHAR(50), \
+var3 VARCHAR(50), \
+gender VARCHAR(7) \
+);
 
 ### ogr command to docker
 [ogr example](https://morphocode.com/using-ogr2ogr-convert-data-formats-geojson-postgis-esri-geodatabase-shapefiles/) <br>
@@ -53,7 +53,8 @@ ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpa
   ON nyct2010.cd = acs.cd;"
 
 ### Export psql
-pg_dump -h 172.17.0.2 -p 5432 -U postgres postgres -N public -T acs > dbexport.pgsql
+pg_dump -h 172.17.0.2 -p 5432 -U postgres postgres -N public -T acs > dbexport.pgsql \
+\copy (SELECT * FROM persons) to 'C:\tmp\persons_client.csv' with csv
 
 ## git
 ### git pull force
