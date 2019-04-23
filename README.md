@@ -13,7 +13,8 @@
 \! ls
 
 ### RUN
-docker run -it --link kpost:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
+docker run -it --link kpost:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres' \
+docker exec -it kpark_postgres_1 psql -h postgres -U kpark postgres
 
 ### Importing CSV into postgre
 COPY table_name FROM ‘/path_to_csv_file.csv’ WITH FORMAT csv; <br>
