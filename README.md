@@ -47,7 +47,10 @@ ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpa
   FROM nyct2010 \
   RIGHT JOIN acs \
   ON nyct2010.cd = acs.cd;"
-  
+
+### Export psql
+pg_dump -U username dbname -N topology -T spatial_ref_sys > dbexport.pgsql
+
 ## git
 ### git pull force
 git fetch --all \
