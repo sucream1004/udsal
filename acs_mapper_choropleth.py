@@ -57,10 +57,11 @@ gdf.crs = {'init': 'epsg:4326', 'no_defs': True}
 gdf = gdf.merge(dat, on='cd')
 gdf.rename(columns = {gdf.columns[14]: 'nb'}, inplace = True)
 gdf['nb'] = gdf['nb'].astype(float)
+gdf = gdf[gdf['nb'] >= 0]
 print('Merging Data')
 
 import folium
-m = folium.Map(location=[40.715005, -73.991396], zoom_start=13, tiles='cartodbpositron')
+m = folium.Map(location=[40.715005, -73.991396], zoom_start=11, tiles='cartodbpositron')
 m.choropleth(geo_data=gdf.to_json(), data=gdf,
              columns=['cd', 'nb'],
              key_on='feature.properties.cd',
