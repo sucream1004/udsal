@@ -62,6 +62,6 @@ git fetch --all \
 git reset --hard origin/master
 
 ### Fun!
-https://github.com/heremaps/pptk # point cloud
-https://github.com/transitland/transitland-processing-animation # transitland animation
+https://github.com/heremaps/pptk # point cloud \
+https://github.com/transitland/transitland-processing-animation # transitland animation \
 https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a # d3
