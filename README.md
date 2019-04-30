@@ -67,3 +67,7 @@ https://github.com/transitland/transitland-processing-animation # transitland an
 https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a # d3 \
 http://qingkaikong.blogspot.com/2018/04/python-jenks-natural-breaks.html # Jenks Natural Break \
 https://observablehq.com/@pstuffa/streeteasy-data-neighborhood-maps
+
+### tmp
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8419399 # ieee short \
+https://www.researchgate.net/profile/Nhat_Hai_Phan/publication/327106790_Deep_Self-Taught_Learning_for_Detecting_Drug_Abuse_Risk_Behavior_in_Tweets_Invited_to_Computational_Social_Network_2018/links/5b795267a6fdcc5f8b53e849/Deep-Self-Taught-Learning-for-Detecting-Drug-Abuse-Risk-Behavior-in-Tweets-Invited-to-Computational-Social-Network-2018.pdf # ieee long
