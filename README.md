@@ -76,3 +76,6 @@ git reset --hard origin/master
 
 ### Reinforcement learning
 [Reinforcement Learning with Python](https://towardsdatascience.com/reinforcement-learning-with-python-8ef0242a2fa2)
+
+### POSTGIS, JS and Python (postgres, postgis, javascript, python, flask)
+[flask1](http://www.jennifergd.com/post/7/)
