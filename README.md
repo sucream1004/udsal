@@ -62,11 +62,12 @@ git fetch --all \
 git reset --hard origin/master
 
 ### Fun!
-https://github.com/heremaps/pptk # point cloud \
-https://github.com/transitland/transitland-processing-animation # transitland animation \
-https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a # d3 \
-http://qingkaikong.blogspot.com/2018/04/python-jenks-natural-breaks.html # Jenks Natural Break \
-https://observablehq.com/@pstuffa/streeteasy-data-neighborhood-maps # street easy analysis
+[Point cloud](https://github.com/heremaps/pptk) # point cloud \
+[Transitland animation](https://github.com/transitland/transitland-processing-animation) # transitland animation \
+[D3 guide](https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a) # d3 \
+[Jenks Natural Break](http://qingkaikong.blogspot.com/2018/04/python-jenks-natural-breaks.html) # Jenks Natural Break \
+[Street easy analysis](https://observablehq.com/@pstuffa/streeteasy-data-neighborhood-maps) # street easy analysis \
+[Postgres, python and JS](https://gis.stackexchange.com/questions/232668/adding-a-postgresql-database-to-a-web-map) # postgres, python and JS (flask or feather) 
 
 ### tmp
 [ieee short](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8419399) # ieee short \
