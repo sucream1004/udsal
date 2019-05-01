@@ -1,6 +1,3 @@
-# udsal !
-# 화이팅~~
-
 # CHEATSHEET
 
 ## docker cp multiple files in unix
