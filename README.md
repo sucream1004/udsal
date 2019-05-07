@@ -82,3 +82,4 @@ git reset --hard origin/master
 
 ### Neural-style theory (computer vision)
 [Neural-style](https://towardsdatascience.com/neural-style-transfer-tutorial-part-1-f5cd3315fa7f)
+[Rohan & Lenny](https://ayearofai.com/rohan-lenny-2-convolutional-neural-networks-5f4cd480a60b)
