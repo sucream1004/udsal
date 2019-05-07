@@ -79,3 +79,6 @@ git reset --hard origin/master
 
 ### POSTGIS, JS and Python (postgres, postgis, javascript, python, flask)
 [flask1](http://www.jennifergd.com/post/7/)
+
+### Neural-style theory (computer vision)
+[Neural-style](https://towardsdatascience.com/neural-style-transfer-tutorial-part-1-f5cd3315fa7f)
