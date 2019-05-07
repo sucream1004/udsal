@@ -81,5 +81,6 @@ git reset --hard origin/master
 [flask1](http://www.jennifergd.com/post/7/)
 
 ### Neural-style theory (computer vision)
-[Neural-style](https://towardsdatascience.com/neural-style-transfer-tutorial-part-1-f5cd3315fa7f)
-[Rohan & Lenny](https://ayearofai.com/rohan-lenny-2-convolutional-neural-networks-5f4cd480a60b)
+[Neural-style](https://towardsdatascience.com/neural-style-transfer-tutorial-part-1-f5cd3315fa7f) \
+[Rohan & Lenny](https://ayearofai.com/rohan-lenny-2-convolutional-neural-networks-5f4cd480a60b) \
+[Neural-style TF tutorial](https://medium.com/tensorflow/neural-style-transfer-creating-art-with-deep-learning-using-tf-keras-and-eager-execution-7d541ac31398)
