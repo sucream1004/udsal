@@ -1,5 +1,8 @@
 # CHEATSHEET
 
+## ubuntu server(?) path
+/var/www/html 
+
 ## docker cp multiple files in unix
 for f in data/*txt; do docker cp $f sandbox_web_1:/usr/src/app/data/; done
 
