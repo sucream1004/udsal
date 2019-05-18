@@ -3,6 +3,9 @@
 ## ubuntu server(?) path
 /var/www/html 
 
+## Running background
+[Stackoverflow](https://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session)
+
 ## docker cp multiple files in unix
 for f in data/*txt; do docker cp $f sandbox_web_1:/usr/src/app/data/; done
 
