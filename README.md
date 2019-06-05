@@ -76,6 +76,7 @@ git reset --hard origin/master
 
 ### folium
 [folium legend](https://nbviewer.jupyter.org/gist/BibMartin/f153aa957ddc5fadc64929abdee9ff2e)
+[plotting map](https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/GeoJSON_and_choropleth.ipynb?flush_cache=true)
 
 ### tmp
 [ieee short](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8419399) # ieee short \
