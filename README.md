@@ -1,4 +1,4 @@
-# CHEATSHEET
+# YAMAE CHEATSHEET
 
 ## ubuntu server(?) path
 /var/www/html 
