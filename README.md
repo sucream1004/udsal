@@ -7,23 +7,32 @@
 [Stackoverflow](https://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session)
 
 ## docker cp multiple files in unix
+```
 for f in data/*txt; do docker cp $f sandbox_web_1:/usr/src/app/data/; done
+```
 
 ## postgres
 [Tutorial](https://www.saltycrane.com/blog/2019/01/how-run-postgresql-docker-mac-local-development/)
 
 ### os command in psql console
+```
 \! ls
+```
 
 ### RUN
+```
 docker run -it --link kpost:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres' \
 docker exec -it kpark_postgres_1 psql -h postgres -U kpark postgres
+```
 
 ### Importing CSV into postgre
+```
 COPY table_name FROM ‘/path_to_csv_file.csv’ WITH FORMAT csv; <br>
 COPY table_name FROM '/path_to_csv_file.csv' DELIMITERS ',' CSV; <br>
+```
 
 ### Create Table : should be same as imported csv columns
+```
 CREATE TABLE table_name ( \
 id BIGSERIAL NOT NULL PRIMARY KEY, \
 var1 VARCHAR(50), \
@@ -31,38 +40,56 @@ var2 VARCHAR(50), \
 var3 VARCHAR(50), \
 gender VARCHAR(7) \
 );
+```
+
+### Update Column
+```
+ALTER TABLE table_name
+ALTER COLUMN column_name [SET DATA] TYPE new_data_type;
+```
 
 ### ogr command to docker
+```
 [ogr example](https://morphocode.com/using-ogr2ogr-convert-data-formats-geojson-postgis-esri-geodatabase-shapefiles/) <br>
 ogrinfo PG:"host=* port=5432 user='user' password='password' dbname='dbname'" <br>
 
 ogr2ogr -f "PostgreSQL" PG:"dbname=my_database user=postgres" "source_data.json" <br>
 
 ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpass dbname=postgres" 'Downloads/nyct2010.geojson'
+```
 
 ### host check
+```
 \conninfo <br>
+```
 
 ### CONCAT
-  ALTER TABLE table_name \
-  ADD column_name column_definition; \
-  UPDATE [table] \
-  SET [column] = CONCAT(state, county, tract)
-
+```
+ALTER TABLE table_name \
+ADD column_name column_definition; \
+UPDATE [table] \
+SET [column] = CONCAT(state, county, tract)
+```
 ### create new table by statement
-  sql = "SELECT * \
-  FROM nyct2010 \
-  RIGHT JOIN acs \
-  ON nyct2010.cd = acs.cd;"
+```
+sql = "SELECT * \
+FROM nyct2010 \
+RIGHT JOIN acs \
+ON nyct2010.cd = acs.cd;"
+```
 
 ### Export psql
+```
 pg_dump -h 172.17.0.2 -p 5432 -U postgres postgres -N public -T acs > dbexport.pgsql \
 \copy (SELECT * FROM persons) to 'C:\tmp\persons_client.csv' with csv
+```
 
 ## git
 ### git pull force
+```
 git fetch --all \
 git reset --hard origin/master
+```
 
 ## ETC
 ### Fun!
