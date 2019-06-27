@@ -27,8 +27,8 @@ docker exec -it kpark_postgres_1 psql -h postgres -U kpark postgres
 
 ### Importing CSV into postgre
 ```
-COPY table_name FROM ‘/path_to_csv_file.csv’ WITH FORMAT csv; <br>
-COPY table_name FROM '/path_to_csv_file.csv' DELIMITERS ',' CSV; <br>
+COPY table_name FROM ‘/path_to_csv_file.csv’ WITH FORMAT csv;
+COPY table_name FROM '/path_to_csv_file.csv' DELIMITERS ',' CSV
 ```
 
 ### Create Table : should be same as imported csv columns
