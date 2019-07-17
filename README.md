@@ -27,8 +27,7 @@ docker exec -it kpark_postgres_1 psql -h postgres -U kpark postgres
 
 ### Importing CSV into postgre
 ```
-COPY table_name FROM ‘/path_to_csv_file.csv’ WITH FORMAT csv;
-COPY table_name FROM '/path_to_csv_file.csv' DELIMITERS ',' CSV
+COPY table_name FROM ‘/path_to_csv_file.csv’ WITH csv;
 ```
 
 ### Create Table : should be same as imported csv columns
@@ -63,44 +62,44 @@ ALTER COLUMN column_name [SET DATA] TYPE new_data_type;
 
 ### ogr command to docker
 ```
-[ogr example](https://morphocode.com/using-ogr2ogr-convert-data-formats-geojson-postgis-esri-geodatabase-shapefiles/) <br>
-ogrinfo PG:"host=* port=5432 user='user' password='password' dbname='dbname'" <br>
+[ogr example](https://morphocode.com/using-ogr2ogr-convert-data-formats-geojson-postgis-esri-geodatabase-shapefiles/)
+ogrinfo PG:"host=* port=5432 user='user' password='password' dbname='dbname'"
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=my_database user=postgres" "source_data.json" <br>
+ogr2ogr -f "PostgreSQL" PG:"dbname=my_database user=postgres" "source_data.json"
 
 ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpass dbname=postgres" 'Downloads/nyct2010.geojson'
 ```
 
 ### host check
 ```
-\conninfo <br>
+\conninfo
 ```
 
 ### CONCAT
 ```
-ALTER TABLE table_name \
-ADD column_name column_definition; \
-UPDATE [table] \
+ALTER TABLE table_name
+ADD column_name column_definition;
+UPDATE [table]
 SET [column] = CONCAT(state, county, tract)
 ```
 ### create new table by statement
 ```
-sql = "SELECT * \
-FROM nyct2010 \
-RIGHT JOIN acs \
+sql = "SELECT *
+FROM nyct2010
+RIGHT JOIN acs
 ON nyct2010.cd = acs.cd;"
 ```
 
 ### Export psql
 ```
-pg_dump -h 172.17.0.2 -p 5432 -U postgres postgres -N public -T acs > dbexport.pgsql \
+pg_dump -h 172.17.0.2 -p 5432 -U postgres postgres -N public -T acs > dbexport.pgsql
 \copy (SELECT * FROM persons) to 'C:\tmp\persons_client.csv' with csv
 ```
 
 ## git
 ### git pull force
 ```
-git fetch --all \
+git fetch --all
 git reset --hard origin/master
 ```
 
