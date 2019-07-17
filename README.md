@@ -1,4 +1,4 @@
-# YAMAE CHEATSHEET
+# 칫싵
 
 ## ubuntu server(?) path
 /var/www/html 
@@ -122,3 +122,7 @@ git reset --hard origin/master
 [Rohan & Lenny](https://ayearofai.com/rohan-lenny-2-convolutional-neural-networks-5f4cd480a60b) \
 [Neural-style TF tutorial](https://medium.com/tensorflow/neural-style-transfer-creating-art-with-deep-learning-using-tf-keras-and-eager-execution-7d541ac31398) \
 [Neural style using Keras](https://medium.com/mlreview/making-ai-art-with-style-transfer-using-keras-8bb5fa44b216)
+
+### Note related to POSTGRESQL
+NYC Taxi zone's crs id is EPSG:102718 not supported in POSTGIS right now (refer [here](https://github.com/DataSystemsLab/GeoSpark/issues/185))\
+It seems that I can add reference system regarding [this](https://gis.stackexchange.com/questions/260263/srid-for-new-york-city-2010-census-shapefile) but error occurs so that I decided convert it before put it into the db
