@@ -21,7 +21,7 @@ for f in data/*txt; do docker cp $f sandbox_web_1:/usr/src/app/data/; done
 
 ### RUN
 ```
-docker run -it --link kpost:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres' \
+docker run -it --link kpost:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
 docker exec -it kpark_postgres_1 psql -h postgres -U kpark postgres
 ```
 
@@ -33,17 +33,26 @@ COPY table_name FROM '/path_to_csv_file.csv' DELIMITERS ',' CSV
 
 ### Create Table : should be same as imported csv columns
 ```
-CREATE TABLE table_name ( \
-id BIGSERIAL NOT NULL PRIMARY KEY, \
-var1 VARCHAR(50), \
-var2 VARCHAR(50), \
-var3 VARCHAR(50), \
-gender VARCHAR(7) \
+CREATE TABLE table_name (
+id BIGSERIAL NOT NULL PRIMARY KEY,
+var1 VARCHAR(50),
+var2 VARCHAR(50),
+var3 VARCHAR(50),
+gender VARCHAR(7)
 );
 ```
+
 ### Install POSTGIS
 ```
 CREATE EXTENTION postgis
+```
+
+### Make a geom column [reference](https://gis.stackexchange.com/questions/122247/st-makepoint-or-st-pointfromtext-to-generate-points)
+```
+create table test (id serial, x real, y real, geom geometry(POINT, 27700));
+insert into test (x, y) select random(), random() from generate_series(1, 1000000);
+update test set geom = ST_SetSRID(ST_MakePoint(x, y),27700);
+update test set geom = ST_PointFromText('POINT(' || x || ' ' || y || ')', 27700);
 ```
 
 ### Update Column
