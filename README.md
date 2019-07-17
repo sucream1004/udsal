@@ -41,6 +41,10 @@ var3 VARCHAR(50), \
 gender VARCHAR(7) \
 );
 ```
+### Install POSTGIS
+```
+CREATE EXTENTION postgis
+```
 
 ### Update Column
 ```
