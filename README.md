@@ -74,6 +74,17 @@ ogr2ogr -f 'PostgreSQL' PG:"host=172.17.0.2 port=5432 user=postgres password=kpa
 ```
 \conninfo
 ```
+### query & spatial query relating CAPSTONE
+```
+UPDATE synthe
+SET o_zone = subquery.loc
+FROM (
+SELECT taxi.loc as loc
+FROM taxi2 as taxi
+JOIN synthe
+ON ST_Intersects(taxi.geom, synthe.o_xy)
+) AS subquery;
+```
 
 ### CONCAT
 ```
