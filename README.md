@@ -40,6 +40,16 @@ var3 VARCHAR(50),
 gender VARCHAR(7)
 );
 ```
+### Drop first row
+```
+DELETE
+FROM txn_log
+WHERE ctid IN (
+        SELECT ctid
+        FROM txn_log
+        ORDER BY txn_log_timestamp limit 500
+        )
+```
 
 ### Install POSTGIS
 ```
