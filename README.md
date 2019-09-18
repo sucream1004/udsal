@@ -135,6 +135,9 @@ git reset --hard origin/master
 [Multi-processing](https://stackoverflow.com/questions/20190668/multiprocessing-a-for-loop) # multi processing python \
 [Postgres and JS](https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/) # postGIS and nodeJS
 
+### **************** CV? Computer? *****************
+[3D something](https://github.com/amir32002/3D_Street_View)
+
 ### folium
 [folium legend](https://nbviewer.jupyter.org/gist/BibMartin/f153aa957ddc5fadc64929abdee9ff2e) \
 [plotting map](https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/GeoJSON_and_choropleth.ipynb?flush_cache=true)
