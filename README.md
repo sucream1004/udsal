@@ -163,3 +163,6 @@ git reset --hard origin/master
 ### Note related to POSTGRESQL
 NYC Taxi zone's crs id is EPSG:102718 not supported in POSTGIS right now (refer [here](https://github.com/DataSystemsLab/GeoSpark/issues/185))\
 It seems that I can add reference system regarding [this](https://gis.stackexchange.com/questions/260263/srid-for-new-york-city-2010-census-shapefile) but error occurs so that I decided convert it before put it into the db
+
+### Raspbery Pi
+[Sensors](https://tutorials-raspberrypi.com/raspberry-pi-sensors-overview-50-important-components/)
