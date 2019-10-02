@@ -139,6 +139,9 @@ git reset --hard origin/master
 [3D something](https://github.com/amir32002/3D_Street_View)
 [Cool studio](https://studiobehind90.com/)
 
+### Window capture using python
+[webkit](http://webscraping.com/blog/Webpage-screenshots-with-webkit/)
+
 ### folium
 [folium legend](https://nbviewer.jupyter.org/gist/BibMartin/f153aa957ddc5fadc64929abdee9ff2e) \
 [plotting map](https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/GeoJSON_and_choropleth.ipynb?flush_cache=true)
