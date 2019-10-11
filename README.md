@@ -169,3 +169,8 @@ It seems that I can add reference system regarding [this](https://gis.stackexcha
 
 ### Raspbery Pi
 [Sensors](https://tutorials-raspberrypi.com/raspberry-pi-sensors-overview-50-important-components/)
+
+### CV & Urban
+[SuperParsing]()http://www.cs.unc.edu/~jtighe/Papers/ECCV10/
+[ChangeDetection](http://www.robesafe.com/personal/roberto.arroyo/docs/Alcantarilla16rss.pdf)
+[]()
