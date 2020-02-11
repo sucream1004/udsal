@@ -172,9 +172,8 @@ It seems that I can add reference system regarding [this](https://gis.stackexcha
 [Sensors](https://tutorials-raspberrypi.com/raspberry-pi-sensors-overview-50-important-components/)
 
 ### CV & Urban
-[SuperParsing]()http://www.cs.unc.edu/~jtighe/Papers/ECCV10/
-[ChangeDetection](http://www.robesafe.com/personal/roberto.arroyo/docs/Alcantarilla16rss.pdf)
-[](https://nikolasent.github.io/opencv/2017/05/07/Bird%27s-Eye-View-Transformation.html)
+[SuperParsing]()http://www.cs.unc.edu/~jtighe/Papers/ECCV10/ <br>
+[ChangeDetection](http://www.robesafe.com/personal/roberto.arroyo/docs/Alcantarilla16rss.pdf) <br>
 
 ### Interpretable Machine Learning
 [Korean](http://research.sualab.com/introduction/2019/08/30/interpretable-machine-learning-overview-1.html)
