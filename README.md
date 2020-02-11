@@ -136,9 +136,9 @@ git reset --hard origin/master
 [Postgres and JS](https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/) # postGIS and nodeJS
 
 ### **************** CV? Computer? Graphic? *****************
-[3D something](https://github.com/amir32002/3D_Street_View)
-[Cool studio](https://studiobehind90.com/)
-[Bird's view transformation](https://nikolasent.github.io/opencv/2017/05/07/Bird%27s-Eye-View-Transformation.html)
+[3D something](https://github.com/amir32002/3D_Street_View) <br>
+[Cool studio](https://studiobehind90.com/) <br>
+[Bird's view transformation](https://nikolasent.github.io/opencv/2017/05/07/Bird%27s-Eye-View-Transformation.html) <br>
 
 ### Window capture using python
 [webkit](http://webscraping.com/blog/Webpage-screenshots-with-webkit/)
@@ -174,7 +174,7 @@ It seems that I can add reference system regarding [this](https://gis.stackexcha
 ### CV & Urban
 [SuperParsing]()http://www.cs.unc.edu/~jtighe/Papers/ECCV10/
 [ChangeDetection](http://www.robesafe.com/personal/roberto.arroyo/docs/Alcantarilla16rss.pdf)
-[]()
+[](https://nikolasent.github.io/opencv/2017/05/07/Bird%27s-Eye-View-Transformation.html)
 
 ### Interpretable Machine Learning
 [Korean](http://research.sualab.com/introduction/2019/08/30/interpretable-machine-learning-overview-1.html)
