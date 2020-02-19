@@ -133,7 +133,7 @@ git reset --hard origin/master
 [Street easy analysis](https://observablehq.com/@pstuffa/streeteasy-data-neighborhood-maps) # street easy analysis \
 [Postgres, python and JS](https://gis.stackexchange.com/questions/232668/adding-a-postgresql-database-to-a-web-map) # postgres, python and JS (flask or feather) \
 [Multi-processing](https://stackoverflow.com/questions/20190668/multiprocessing-a-for-loop) # multi processing python \
-[Postgres and JS](https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/) # postGIS and nodeJS
+[Postgres and JS](https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/) # postGIS and nodeJS \
 [Making point cloud using Google Street View image](https://gisrecept.blogspot.com/2018/06/new-creating-point-clouds-with-google.html)
 
 ### **************** CV? Computer? Graphic? *****************
