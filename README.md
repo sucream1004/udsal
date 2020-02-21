@@ -13,7 +13,8 @@ for f in data/*txt; do docker cp $f sandbox_web_1:/usr/src/app/data/; done
 
 ## postgres
 [Tutorial](https://www.saltycrane.com/blog/2019/01/how-run-postgresql-docker-mac-local-development/) \
-[Create tile from polygon](https://www.azavea.com/blog/2018/10/11/creating-leaflet-tiles-from-open-data/)
+[Create tile from polygon](https://www.azavea.com/blog/2018/10/11/creating-leaflet-tiles-from-open-data/) \
+[flask-postgresql-heroku](https://medium.com/@dushan14/create-a-web-application-with-python-flask-postgresql-and-deploy-on-heroku-243d548335cc)
 
 ### os command in psql console
 ```
