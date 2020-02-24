@@ -19,7 +19,7 @@ for f in data/*txt; do docker cp $f sandbox_web_1:/usr/src/app/data/; done
 ### os command in psql console
 ```
 \! ls
-\! sed 1d file.csv # remove first line of csv file.
+\! sed -i '1d' filename.csv
 ```
 
 ### RUN
