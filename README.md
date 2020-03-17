@@ -184,3 +184,6 @@ It seems that I can add reference system regarding [this](https://gis.stackexcha
 
 ### Mapping
 [Carto-js-4](https://carto.com/blog/creative-maps-carto-js-4/)
+
+### BIM & GIS Integration
+[Awsome-arcgis](https://github.com/hhkaos/awesome-arcgis/tree/master/esri/business-trends/data-management/bim)
