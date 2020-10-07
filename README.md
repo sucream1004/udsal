@@ -187,3 +187,6 @@ It seems that I can add reference system regarding [this](https://gis.stackexcha
 
 ### BIM & GIS Integration
 [Awsome-arcgis](https://github.com/hhkaos/awesome-arcgis/tree/master/esri/business-trends/data-management/bim)
+
+### Image conversion
+[블로그인가 pano to fish, fish to sphere 등등](https://www.shuzhiduo.com/A/1O5Ekbrrz7/)<br>
