@@ -1,5 +1,8 @@
 # 칫싵
 
+## 영어논문쓰기
+[단어 예문 찾기 ](https://brunch.co.kr/@booungsae/19)
+
 ## ubuntu server(?) path
 /var/www/html 
 
