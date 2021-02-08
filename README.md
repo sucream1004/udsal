@@ -204,3 +204,49 @@ It seems that I can add reference system regarding [this](https://gis.stackexcha
 
 ## Dataset for Datathon
 https://www.semantic3d.net/view_dbase.php?chl=1#download  
+
+## droplet vnc
+
+```
+# 1. Installing XFCE and VNC server
+apt update
+apt install xfce4 xfce4-goodies tightvncserver
+# 1.1. If you're on vultr.com you will need more packages
+apt install xfonts-base x11-xserver-utils
+# 2. Initial VNC server config
+# Prompts to set up password for VNC server here...
+vncserver
+# Allow clients to connect to X server from any host
+# inspired by https://superuser.com/a/392263/140872
+DISPLAY=:1 xhost +
+# 3. Now creating proper config and restarting the server
+vncserver -kill :1
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+cat << EOF > ~/.vnc/xstartup
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+EOF
+chmod +x ~/.vnc/xstartup
+# 4. Creating a user account
+export USERNAME="username" # Replace with desired user name
+useradd --create-home $USERNAME
+adduser $USERNAME sudo
+passwd $USERNAME
+# Copy ssh keys to new user
+mkdir -p /home/$USERNAME/.ssh
+cp ~/.ssh/authorized_keys /home/$USERNAME/.ssh/
+chown -R $USERNAME:$USERNAME /home/$USERNAME/.ssh
+# Copy VNC settings to a new user
+mkdir -p /home/$USERNAME/.vnc
+cp ~/.vnc/xstartup /home/$USERNAME/.vnc/
+chown -R $USERNAME:$USERNAME /home/$USERNAME/.vnc/
+# 5. Start VNC server
+# Stop command. Just in case. Ignore errors here
+su $USERNAME -c "vncserver -kill :1"
+# Start
+su $USERNAME -c "vncserver -depth 24 -geometry 1280x800"
+# 6. How to stop VNC server when you are done?
+# su $USERNAME -c "vncserver -kill :1"
+```
+
