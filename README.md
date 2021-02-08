@@ -250,3 +250,7 @@ su $USERNAME -c "vncserver -depth 24 -geometry 1280x800"
 # su $USERNAME -c "vncserver -kill :1"
 ```
 
+## Scene Classification Milestone
+![](./images/scene_classification_milestone.png)  
+source: Zeng, D., Liao, M., Tavakolian, M., Guo, Y., Zhou, B., Hu, D., ... & Liu, L. (2021). Deep Learning for Scene Classification: A Survey. arXiv preprint arXiv:2101.10531.
+
