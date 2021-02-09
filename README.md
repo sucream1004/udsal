@@ -251,6 +251,7 @@ su $USERNAME -c "vncserver -depth 24 -geometry 1280x800"
 ```
 
 ## Scene Classification Milestone
+https://medium.com/@achekulaev/how-to-set-up-linux-desktop-environment-in-the-cloud-with-digitalocean-droplet-e51ae4e066b  
 ![](./images/scene_classification_milestone.png)  
 source: Zeng, D., Liao, M., Tavakolian, M., Guo, Y., Zhou, B., Hu, D., ... & Liu, L. (2021). Deep Learning for Scene Classification: A Survey. arXiv preprint arXiv:2101.10531.
 
