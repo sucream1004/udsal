@@ -255,3 +255,5 @@ https://medium.com/@achekulaev/how-to-set-up-linux-desktop-environment-in-the-cl
 ![](./images/scene_classification_milestone.png)  
 source: Zeng, D., Liao, M., Tavakolian, M., Guo, Y., Zhou, B., Hu, D., ... & Liu, L. (2021). Deep Learning for Scene Classification: A Survey. arXiv preprint arXiv:2101.10531.
 
+## HKU seminar
+- https://www.safegraph.com/
