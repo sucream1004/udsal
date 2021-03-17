@@ -257,3 +257,6 @@ source: Zeng, D., Liao, M., Tavakolian, M., Guo, Y., Zhou, B., Hu, D., ... & Liu
 
 ## HKU seminar
 - https://www.safegraph.com/
+
+## Annotation tool for PCD
+https://medium.com/deep-systems/releasing-first-online-3d-point-cloud-labeling-tool-in-supervisely-4faca42b5d6e
